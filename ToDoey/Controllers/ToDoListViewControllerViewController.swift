@@ -13,16 +13,11 @@ class ToDoListViewController: UITableViewController {
     var itemArray = [Item]()
     
     let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
-   
-    
- // let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
-        
-        print(dataFilePath)
+        print(dataFilePath!)
         
         loadItems()
 
