@@ -6,8 +6,7 @@
 //  Copyright © 2019 Daniel Munoz. All rights reserved.
 //
 
-class Item {
+class Item: Codable {
     var title: String = ""
     var done: Bool = false
-    
 }
