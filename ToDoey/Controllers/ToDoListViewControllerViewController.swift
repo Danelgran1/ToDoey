@@ -44,13 +44,14 @@ class ToDoListViewController: UITableViewController {
         cell.accessoryType = item.done ? .checkmark : .none
         
         return cell
+        
     }
     
 //MARK - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        saveItems()
+        tableView.reloadData()
         
         tableView.deselectRow(at: indexPath, animated: true)  //Animates deselecting item
 
